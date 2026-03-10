@@ -156,7 +156,7 @@ pub fn ui_layout_system(
         }
 
         update_children_recursively(
-            &mut ui_surface,
+            &mut *ui_surface,
             &ui_children,
             &added_node_query,
             ui_root_entity,
@@ -173,7 +173,7 @@ pub fn ui_layout_system(
 
         update_uinode_geometry_recursive(
             ui_root_entity,
-            &mut ui_surface,
+            &mut *ui_surface,
             true,
             computed_target.physical_size().as_vec2(),
             Affine2::IDENTITY,
