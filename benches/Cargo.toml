@@ -62,10 +62,10 @@ too_long_first_doc_paragraph = "allow"
 allow_attributes = "warn"
 allow_attributes_without_reason = "warn"
 
-[lints.rust]
-unexpected_cfgs = { level = "warn", check-cfg = ['cfg(docsrs_dep)'] }
-unsafe_op_in_unsafe_fn = "warn"
-unused_qualifications = "warn"
+# [lints.rust]
+# unexpected_cfgs = { level = "warn", check-cfg = ['cfg(docsrs_dep)'] }
+# unsafe_op_in_unsafe_fn = "warn"
+# unused_qualifications = "warn"
 
 [lib]
 # This fixes the "Unrecognized Option" error when running commands like
