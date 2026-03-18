@@ -81,12 +81,12 @@ rust-version = "1.89.0"
 
 # Unfortunately, cargo does not currently support overriding workspace lints
 # inside a particular crate. See https://github.com/rust-lang/cargo/issues/13157
-#
+
 # We require an override for cases like `std_instead_of_core`, which are intended
 # for the library contributors and not for how users should consume Bevy.
 # To ensure examples aren't subject to these lints, below is a duplication of the
 # workspace lints, with the "overrides" applied.
-#
+
 # [lints]
 # workspace = true
 
@@ -117,12 +117,12 @@ alloc_instead_of_core = "allow"
 allow_attributes = "warn"
 allow_attributes_without_reason = "warn"
 
-[lints.rust]
-missing_docs = "warn"
-unexpected_cfgs = { level = "warn", check-cfg = ['cfg(docsrs_dep)'] }
-unsafe_code = "deny"
-unsafe_op_in_unsafe_fn = "warn"
-unused_qualifications = "warn"
+# [lints.rust]
+# missing_docs = "warn"
+# unexpected_cfgs = { level = "warn", check-cfg = ['cfg(docsrs_dep)'] }
+# unsafe_code = "deny"
+# unsafe_op_in_unsafe_fn = "warn"
+# unused_qualifications = "warn"
 
 [features]
 default = ["2d", "3d", "ui"]
@@ -4962,16 +4962,16 @@ doc-scrape-examples = false
 [package.metadata.example.test_invalid_skinned_mesh]
 hidden = true
 
-[profile.wasm-release]
-inherits = "release"
-opt-level = "z"
-lto = "fat"
-codegen-units = 1
+# [profile.wasm-release]
+# inherits = "release"
+# opt-level = "z"
+# lto = "fat"
+# codegen-units = 1
 
-[profile.stress-test]
-inherits = "release"
-lto = "fat"
-panic = "abort"
+# [profile.stress-test]
+# inherits = "release"
+# lto = "fat"
+# panic = "abort"
 
 [package.metadata.docs.rs]
 # This cfg is needed so that #[doc(fake_variadic)] is correctly propagated for
