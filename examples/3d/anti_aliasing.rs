@@ -1,3 +1,4 @@
+// vendor\bevy\examples\3d\anti_aliasing.rs
 //! Compares different anti-aliasing techniques supported by Bevy.
 
 use std::{f32::consts::PI, fmt::Write};
