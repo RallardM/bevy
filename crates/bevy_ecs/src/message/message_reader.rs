@@ -1,3 +1,4 @@
+// vendor\bevy\crates\bevy_ecs\src\message\message_reader.rs
 #[cfg(feature = "multi_threaded")]
 use crate::message::MessageParIter;
 use crate::{
