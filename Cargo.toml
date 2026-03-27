@@ -4962,16 +4962,16 @@ doc-scrape-examples = false
 [package.metadata.example.test_invalid_skinned_mesh]
 hidden = true
 
-# [profile.wasm-release]
-# inherits = "release"
-# opt-level = "z"
-# lto = "fat"
-# codegen-units = 1
+[profile.wasm-release]
+inherits = "release"
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
 
-# [profile.stress-test]
-# inherits = "release"
-# lto = "fat"
-# panic = "abort"
+[profile.stress-test]
+inherits = "release"
+lto = "fat"
+panic = "abort"
 
 [package.metadata.docs.rs]
 # This cfg is needed so that #[doc(fake_variadic)] is correctly propagated for
